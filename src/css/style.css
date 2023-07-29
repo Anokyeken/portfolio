@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Marcellus&family=Rajdhani:wght@300;400&family=Raleway:wght@100&family=Sulphur+Point:wght@400&display=swap");
+.f-bai {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.f-marcellus {
+  font-family: "Marcellus", serif;
+}
+
+.f-rajdhani {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.f-rale {
+  font-family: "Raleway", sans-serif;
+}
+
+.f-sulphur {
+  font-family: "Sulphur Point", sans-serif;
+}
+
+.vista-bg {
+  background-color: #0b8fcc;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.vista-btn {
+  background-color: #0b8fcc;
+  color: #fff;
+  transition: 0.8s;
+}
+.vista-btn:hover {
+  color: #0b8fcc;
+  background-color: #fff;
+}
+
+#useful-links a, #contact-me a {
+  color: #0b8fcc;
+}
+
+.top-container {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.top-container nav {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+.top-container nav .nav-item:hover {
+  background-color: #0b8fcc;
+  transition: all 1.5s ease-in-out;
+}
+.top-container nav .nav-link {
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+}
+.top-container .intro {
+  margin-top: 200px;
+  color: rgb(255, 255, 255);
+}
+.top-container .intro #name-div {
+  border: 2px solid #0b8fcc;
+  border-radius: 10px;
+  font-family: "Marcellus", serif;
+  background: rgba(0, 0, 0, 0.2666666667);
+}
+.top-container .intro #name-div .vista {
+  font-size: 1.5em;
+}
+.top-container .intro #name-div button {
+  font-size: 1.2em;
+}
+
+.hd {
+  font-size: 2em;
+}
+
+#about-container {
+  background-color: #000;
+  padding: 50px 10px;
+}
+#about-container #about-container-inner {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 8vh);
+  grid-gap: 12px;
+}
+#about-container #about-container-inner .jee-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#about-container #about-container-inner .abt-item1 {
+  grid-column: 1/span 4;
+  grid-row: 1/span 4;
+}
+#about-container #about-container-inner .abt-item2 {
+  grid-column: 5/span 4;
+  grid-row: 1/span 4;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#portfolio-container {
+  background-color: #fff;
+  padding: 50px;
+}
+#portfolio-container #portfolio-div {
+  overflow: hidden;
+}
+#portfolio-container #portfolio-div .inner {
+  position: relative;
+}
+#portfolio-container #portfolio-div .inner #desc {
+  position: absolute;
+  width: 200px;
+  padding: 5px;
+}
+#portfolio-container #portfolio-div .inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-left: 200px solid transparent;
+  transition: all 0.8s ease-in-out;
+}
+#portfolio-container #portfolio-div:hover .inner::before {
+  border-color: rgba(255, 115, 0, 0.525);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#portfolio-container #portfolio-div a, #portfolio-container #portfolio-div #desc {
+  color: #fff;
+}
+
+#resume-container {
+  padding: 50px;
+}
+
+#contact-container {
+  padding: 50px;
+  background-color: #000;
+}
+
+.paralex {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  background-attachment: fixed;
+}
+
+#contact-container #contact-form .msg-btn {
+  padding: 5px 40px;
+}
+#contact-container .contact-icon {
+  border: 2px solid #0b8fcc;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.fabtn {
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  width: 80px;
+  z-index: 1;
+  transition-property: background;
+}
+.fabtn a {
+  border: 2px solid #fff;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 10px;
+  background: #0b8fcc;
+  color: #fff;
+  transition: 0.8s;
+}
+.fabtn a:hover {
+  background: #fff;
+  color: #0b8fcc;
+  border: 2px solid #0b8fcc;
+}
+.fabtn i {
+  font-size: 25px;
+}
+
+#footer-container #connect-links .fa-brands {
+  font-size: 20px;
+  margin: 3px;
+}
+#footer-container #connect-links a {
+  color: #0b8fcc;
+  text-decoration: none;
+}
+#footer-container #connect-links a span {
+  border: 1px solid #0b8fcc;
+  border-radius: 10%;
+  padding: 8px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.8s;
+  margin: 5px;
+}
+#footer-container #connect-links a span:hover {
+  background: #0b8fcc;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+}
+#footer-container #useful-links p {
+  margin: 3px 0;
+}
+#footer-container #useful-links a {
+  text-decoration: none;
+  transition: 1s;
+}
+#footer-container #useful-links a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+#footer-container #contact-me p {
+  margin: 3px 0;
+}
+#footer-container #contact-me a {
+  text-decoration: none;
+  margin: 3px 0;
+}
+
+/* start of animate on scroll effect */
+p {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  transition: all 0.8s ease-out;
+}
+
+.showMe {
+  opacity: 1;
+  bottom: 0;
+}
+
+/* end of animate on scroll effect */
+/**********************************Responsiveness***************************************/
+@media screen and (max-width: 660px) {
+  .abt-item p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .abt-item p {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,312 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.vista-btn
+{
+    background-color:  $ken;
+    color: #fff;
+    transition: 0.8s;
+    &:hover{
+        color:   $ken;
+        background-color: #fff;
+    }
+}
+#useful-links a,#contact-me a
+{
+    color:   $ken;
+}
+.top-container{
+    // background-image: url('assets/images/farzad-p-xSl33Wxyc-unsplash.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    nav{
+        background-color: #0005;
+        .nav-item
+        {
+
+            &:hover{
+                background-color:  $ken;
+                transition: all 1.5s ease-in-out;
+            }
+        }
+        .nav-link
+        {
+            color: #fff;
+            font-family: $font-rajdhani;
+            font-size: 1.5em;
+        }
+    }
+    .intro
+    {   
+    
+        margin-top: 200px;
+        color: rgb(255, 255, 255);
+        #name-div
+        {
+            border: 2px solid $ken;
+            border-radius: 10px;
+            font-family: $font-marcellus;
+            background: #0004;
+            .vista{
+                font-size: 1.5em;
+            }
+            button{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+.hd
+{
+    font-size: 2em;
+}
+// About style 
+#about-container
+{
+    background-color: #000;
+    padding: 50px 10px;
+    #about-container-inner
+    {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(4,8vh);
+        grid-gap: 12px;
+        .jee-img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            // transform: rotateX(70deg);
+        }
+        .abt-item1
+        {
+            grid-column: 1/span 4;
+            grid-row: 1/span 4;
+            // perspective: 1200px;
+        }
+        .abt-item2
+        {
+            grid-column: 5/span 4;
+            grid-row: 1/span 4;
+            border: 2px solid #fff;
+            color: #fff;
+            // padding: 5px 5px;
+            // box-shadow:0 2px 2px 0 rgba(192, 187, 187, 0.918),2px 0  2px 0 rgba(178, 174, 174, 0.918);
+            // p 
+            // {
+            //     // display: contents;
+            // }
+        }
+     
+    }
+   
+
+}
+//portfolio style
+#portfolio-container
+{
+    background-color: #fff;
+    padding: 50px;
+
+    #portfolio-div
+    {   
+        overflow: hidden;
+        .inner
+        { 
+            // padding: 2px;
+            position: relative;
+            #desc
+            {
+                position: absolute;
+                width: 200px;
+                padding: 5px;
+                // display: none;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                inset: 0;
+                // box-sizing: border-box;
+                border-left: 200px solid transparent;
+                // border-bottom: px solid transparent;
+                transition: all .8s ease-in-out;
+            }
+     
+         
+        }
+        &:hover .inner::before
+        {
+            border-color: rgba(255, 115, 0, 0.525);
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+        }
+
+        a, #desc
+        {
+            color: #fff;
+        }
+
+    }
+}
+
+//resume style
+#resume-container
+{
+    padding: 50px;
+}
+//contact style
+#contact-container
+{
+    padding: 50px;
+   background-color: #000;
+}
+.paralex
+{
+    // background-image: url('/assets/images/blake-connally-B3l0g6HLxr8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    background-attachment: fixed;
+}
+
+//contact style
+#contact-container{
+    #contact-form
+    {
+        .msg-btn
+        {
+            padding: 5px 40px;
+        }     
+    }
+
+    .contact-icon
+    {
+      border: 2px solid $ken;
+      padding: 4px;
+      border-radius: 50%;
+    }
+}
+
+.fabtn
+{
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    width: 80px;
+    z-index: 1;
+    transition-property: background;
+
+    a{
+        border: 2px solid #fff;
+        border-radius: 100px;
+        text-decoration: none;
+        padding: 10px;
+        background: $ken;
+        color: #fff;
+        transition: 0.8s;
+        &:hover
+        {
+            background: #fff;
+            color: $ken;
+            border: 2px solid  $ken;
+        }
+    }
+
+    i{
+        font-size: 25px;
+    }
+}
+#footer-container
+{
+    #connect-links
+    {
+        .fa-brands
+        {
+            font-size: 20px;
+            margin: 3px;
+        }
+        a{
+            color:  $ken;
+            text-decoration: none;           
+          
+            span
+            {
+                border: 1px solid  $ken;
+                border-radius: 10%;
+                padding: 8px;
+                box-shadow: 0 6px 6px rgb(0, 0, 0,0.2); 
+                transition: 0.8s;  
+                margin: 5px;
+                 &:hover{
+                    background: $ken;
+                    border-radius: 50%;
+                    color: #fff;
+                    border: none;
+                 }    
+           
+            }
+        }
+    }
+    #useful-links
+    {
+        p{
+            margin: 3px 0;
+        }
+        a{
+           text-decoration: none;
+           transition: 1s;
+           &:hover{
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+           }
+        }
+    }
+    #contact-me
+    {
+        p{
+            margin: 3px 0;
+        }
+        a{
+            text-decoration: none;
+             margin: 3px 0;
+        }
+    }
+}
+
+/* start of animate on scroll effect */
+p{
+    opacity: 0;
+    position:relative;
+    bottom: -20px;
+    transition:all .8s ease-out;
+}
+.showMe
+{
+    opacity: 1;
+    bottom: 0;
+}
+/* end of animate on scroll effect */
+
+/**********************************Responsiveness***************************************/
+@media screen and (max-width:660px)
+{
+    .abt-item{
+        p{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:550px)
+{
+    .abt-item{
+        p{
+            font-size: 12px;
+            // line-height: 120%;
+        }
+    }
+}
