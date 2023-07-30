@@ -23,6 +23,10 @@
   background-color: #0b8fcc;
 }
 
+.ken-main {
+  color: #0b8fcc;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
