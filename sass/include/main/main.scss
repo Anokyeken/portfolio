@@ -93,12 +93,7 @@ html{
             grid-row: 1/span 4;
             border: 2px solid #fff;
             color: #fff;
-            // padding: 5px 5px;
-            // box-shadow:0 2px 2px 0 rgba(192, 187, 187, 0.918),2px 0  2px 0 rgba(178, 174, 174, 0.918);
-            // p 
-            // {
-            //     // display: contents;
-            // }
+            
         }
      
     }
@@ -299,6 +294,17 @@ p{
         p{
             font-size: 14px;
         }
+    }
+}
+
+@media screen and (max-width:1230px)
+{
+    .abt-item2
+    {
+        grid-column: 5/span 4;
+        grid-row: 1/span 8 !important;
+     
+        
     }
 }
 @media screen and (max-width:550px)
